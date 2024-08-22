@@ -1,0 +1,9 @@
+<app-table
+  [columns]="columns"
+  [data]="data"
+  [actions]="actions"
+  [clickableRows]="true"
+  (rowClick)="onRowClick($event)">
+</app-table>
+
+<button mat-fab color="primary" (click)="openDataTrackDialog()">Create Track</button>

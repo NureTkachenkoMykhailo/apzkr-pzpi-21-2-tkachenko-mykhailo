@@ -1,0 +1,24 @@
+.dashboard-container {
+  padding-top: 5vh;
+  display: flex;
+  height: 80%;
+}
+
+.dashboard-menu {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-menu button {
+  margin-bottom: 10px; /* Margin between buttons */
+}
+
+.dashboard-content {
+  flex-grow: 1;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: 20px;
+}

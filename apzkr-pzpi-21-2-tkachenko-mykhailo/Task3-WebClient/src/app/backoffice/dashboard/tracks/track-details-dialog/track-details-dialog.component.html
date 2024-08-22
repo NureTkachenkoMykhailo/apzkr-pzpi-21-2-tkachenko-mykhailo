@@ -1,0 +1,32 @@
+<h1 mat-dialog-title>{{ track.name }}</h1>
+<div mat-dialog-content class="track-details-dialog">
+  <p><strong>ID:</strong> {{ track.id }}</p>
+  <div *ngIf="track.sections.length > 0">
+    <h3>Sections</h3>
+    <ul>
+      <li *ngFor="let section of track.sections">
+        {{ section.information.name }}
+        <ul>
+          <li>
+            Curvature degrees: {{ section.information.curvatureDegrees }}
+          </li>
+          <li>
+            Danger level: {{ DangerLevel[section.information.danger]  }}
+          </li>
+          <li>
+            Factors:
+              Wind {{ section.factors.wind.multiplicationValue }},
+              Snow {{ section.factors.snow.multiplicationValue }},
+              Iciness {{ section.factors.iciness.multiplicationValue }}
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div *ngIf="track.sections.length === 0">
+    <p>No sections available for this track.</p>
+  </div>
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close class="close-button">Close</button>
+</div>

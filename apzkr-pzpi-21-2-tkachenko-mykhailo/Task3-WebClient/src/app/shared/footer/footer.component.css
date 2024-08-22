@@ -1,0 +1,17 @@
+.footer {
+  background: linear-gradient(to right, #7b4397, #dc2430);
+  color: white;
+  margin-bottom: 0;
+  padding: 30px 0;
+  /*position: fixed;*/
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  text-align: center;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

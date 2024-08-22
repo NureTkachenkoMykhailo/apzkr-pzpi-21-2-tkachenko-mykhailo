@@ -1,0 +1,19 @@
+.track-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-height: 70vh; /* Set a maximum height for the dialog content */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 20px; /* Adjust padding as needed */
+}
+
+.section-group {
+  background-color: #333;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.mat-dialog-actions {
+  justify-content: flex-end;
+}

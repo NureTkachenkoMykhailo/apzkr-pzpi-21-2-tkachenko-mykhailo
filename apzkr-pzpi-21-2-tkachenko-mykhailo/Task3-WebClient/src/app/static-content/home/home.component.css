@@ -1,0 +1,35 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.background {
+  background-image: url('https://www.zellamsee-kaprun.com/bilder/ski/freeride/11356/image-thumb__11356__lightbox/Kitzsteinhorn_Freeride%20%281%29%20%28c%29%20Kitzsteinhorn.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.content {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}

@@ -1,0 +1,65 @@
+/* Set the background color and padding for the dialog */
+.mat-dialog-container {
+  background-color: #1E1E1E;
+  color: #FFF;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px; /* Constrain width to prevent stretching */
+  max-height: 80vh; /* Ensure dialog doesn't exceed viewport height */
+  overflow-y: auto; /* Scroll only if content exceeds max height */
+}
+
+/* Style the title */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #FFF;
+}
+
+/* Style the paragraph text */
+p {
+  margin-bottom: 10px;
+}
+
+/* Style the list of sections */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #333;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  color: #FFF; /* Ensure text is visible */
+}
+
+/* Style the section headings */
+h3 {
+  margin-bottom: 10px;
+  color: #FFF;
+}
+
+/* Style the close button */
+button[mat-dialog-close] {
+  background-color: #333;
+  color: #FFC0CB;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.close-button {
+  width: auto;
+  padding: 10px 20px;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Remove scrollbar when not needed */
+.mat-dialog-container::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}

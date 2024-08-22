@@ -1,0 +1,8 @@
+<button mat-raised-button color="primary" (click)="openDataTrainingDialog()">Create Training</button>
+<app-table
+  [columns]="columns"
+  [data]="data"
+  [actions]="actions"
+  [clickableRows]="true"
+  (rowClick)="onRowClick($event)">
+</app-table>

@@ -1,0 +1,16 @@
+<router-outlet></router-outlet>
+
+<div class="dashboard-container">
+  <div class="dashboard-menu">
+    <button (click)="setDashboard('instructors')">Users Dashboard</button>
+    <button (click)="setDashboard('bookings')">Bookings Dashboard</button>
+    <button (click)="setDashboard('tracks')">Tracks Dashboard</button>
+    <button (click)="setDashboard('trainings')">Training Dashboard</button>
+  </div>
+  <div class="dashboard-content">
+    <app-instructors *ngIf="selectedDashboard === 'instructors'"></app-instructors>
+    <app-bookings *ngIf="selectedDashboard === 'bookings'"></app-bookings>
+    <app-tracks *ngIf="selectedDashboard === 'tracks'"></app-tracks>
+    <app-trainings *ngIf="selectedDashboard === 'trainings'"></app-trainings>
+  </div>
+</div>

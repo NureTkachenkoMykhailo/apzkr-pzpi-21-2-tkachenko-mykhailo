@@ -1,0 +1,55 @@
+<h2 mat-dialog-title>Create Training Session</h2>
+<mat-dialog-content [formGroup]="trainingForm">
+  <mat-form-field appearance="fill" class="full-width">
+    <mat-label>Training Name</mat-label>
+    <input matInput formControlName="generalInformationName" placeholder="Enter training name">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="full-width">
+    <mat-label>Description</mat-label>
+    <textarea matInput formControlName="generalInformationDescriptions" placeholder="Enter description"></textarea>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="full-width">
+    <mat-label>Duration (Minutes)</mat-label>
+    <input matInput type="number" formControlName="generalInformationMinutes" min="1">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="full-width">
+    <mat-label>Start Date & Time</mat-label>
+    <input matInput [matDatepicker]="picker" formControlName="generalInformationStart">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="full-width">
+    <mat-label>Select Track</mat-label>
+    <mat-select formControlName="trackId">
+      <mat-option *ngFor="let track of tracks" [value]="track.id">
+        {{ track.name }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="full-width">
+    <mat-label>Select Instructor</mat-label>
+    <mat-select formControlName="instructorId">
+      <mat-option *ngFor="let instructor of instructors" [value]="instructor.id">
+        {{ instructor.firstName }} {{ instructor.lastName }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="full-width">
+    <mat-label>Select Levels</mat-label>
+    <mat-select formControlName="levels" multiple>
+      <mat-option *ngFor="let level of levels" [value]="level.level">
+        Level {{ level.name }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button (click)="cancel()">Cancel</button>
+  <button mat-button color="primary" (click)="saveTraining()" [disabled]="!trainingForm.valid">Create</button>
+</mat-dialog-actions>

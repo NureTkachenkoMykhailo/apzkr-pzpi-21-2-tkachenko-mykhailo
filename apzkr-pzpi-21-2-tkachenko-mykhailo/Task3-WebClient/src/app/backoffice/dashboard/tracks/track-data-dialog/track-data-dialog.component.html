@@ -1,0 +1,56 @@
+<h1 mat-dialog-title>Create New Track</h1>
+<form [formGroup]="trackForm" class="track-form">
+  <mat-form-field>
+    <mat-label>Track Name</mat-label>
+    <input matInput formControlName="name" required>
+  </mat-form-field>
+
+  <div formArrayName="sections">
+    <div *ngFor="let section of sections.controls; let i=index" [formGroupName]="i" class="section-group">
+      <h3>Section {{ i + 1 }}</h3>
+
+      <mat-form-field>
+        <mat-label>Section Name</mat-label>
+        <input matInput formControlName="informationName" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Curvature Degrees</mat-label>
+        <input matInput type="number" formControlName="informationCurvatureDegrees" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Default Danger Level</mat-label>
+        <mat-select formControlName="informationDefaultDangerLevel" required>
+          <mat-option *ngFor="let level of dangerLevels" [value]="level.value">
+            {{ level.label }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Wind Factor</mat-label>
+        <input matInput type="number" formControlName="factorsWind" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Snow Factor</mat-label>
+        <input matInput type="number" formControlName="factorsSnow" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Iciness Factor</mat-label>
+        <input matInput type="number" formControlName="factorIciness" required>
+      </mat-form-field>
+
+      <button mat-button (click)="removeSection(i)">Remove Section</button>
+    </div>
+  </div>
+
+  <button mat-button (click)="addSection()">Add Section</button>
+
+  <div mat-dialog-actions>
+    <button mat-button (click)="cancel()">Cancel</button>
+    <button mat-button color="primary" (click)="createTrack()">Create</button>
+  </div>
+</form>

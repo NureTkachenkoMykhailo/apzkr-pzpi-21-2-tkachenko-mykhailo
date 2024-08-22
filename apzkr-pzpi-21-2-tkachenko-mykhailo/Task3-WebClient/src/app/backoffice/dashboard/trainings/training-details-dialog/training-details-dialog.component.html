@@ -1,0 +1,27 @@
+<h2 mat-dialog-title>Training Details</h2>
+<mat-dialog-content>
+  <div>
+    <strong>Training Name:</strong> {{ training.information.name }}
+  </div>
+  <div>
+    <strong>Track:</strong> {{ training.track?.name ?? "No information" }}
+  </div>
+  <div>
+    <strong>Instructor:</strong> {{ training.instructor?.firstName ?? "No information"  }} {{ training.instructor?.lastName ?? "No information"  }}
+  </div>
+  <div>
+    <strong>Start Time:</strong> {{ training.information.start | date: 'short' }}
+  </div>
+  <div>
+    <strong>Duration:</strong> {{ training.information.durationMinutes }} minutes
+  </div>
+  <div>
+    <strong>Description:</strong> {{ training.information.descriptions || 'No description available' }}
+  </div>
+  <div>
+    <strong>Levels:</strong> {{ levels.join(', ')}}
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close>Close</button>
+</mat-dialog-actions>
