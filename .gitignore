@@ -397,3 +397,4 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 apzkr-pzpi-21-2-tkachenko-mykhailo/Task1-Server/SnowWarden.Backend/.idea
+apzkr-pzpi-21-2-tkachenko-mykhailo/Task3-WebClient/dist
