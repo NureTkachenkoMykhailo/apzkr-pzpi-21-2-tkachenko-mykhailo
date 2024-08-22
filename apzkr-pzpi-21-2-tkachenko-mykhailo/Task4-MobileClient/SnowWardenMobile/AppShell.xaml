@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:views="clr-namespace:SnowWardenMobile.Views"
+       x:Class="SnowWardenMobile.AppShell">
+
+    <!-- Flyout or TabBar configuration -->
+    <FlyoutItem Title="Home" Icon="icon_home.png">
+        <Tab>
+            <ShellContent Title="Available trainings sessions" ContentTemplate="{DataTemplate views:MainPage}" />
+        </Tab>
+    </FlyoutItem>
+
+</Shell>
