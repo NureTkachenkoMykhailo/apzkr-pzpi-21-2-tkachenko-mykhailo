@@ -71,7 +71,7 @@ __________________ ст.викл. Сокорчук І.П.
 РЕФЕРАТ
 
 
-Пояснювальна записка: 52с., 7 рис., 2 додатку, 7 джерел.
+Пояснювальна записка: 52с., 7 рис., 2 додатку, 8 джерел.
 ГОРИ, ГІРСЬКОЛИЖНИЙ, КУРОРОРТ, АВТОМАТИЗАЦІЯ, АРХІТЕКТУРА.
 Метою проекту є розробка програмної системи для автоматизації управління та відстеження тренувань та безпеки на гірськолижному курорті.
 Основний стек технологій це PostgreSql як загальна СУБД для всіх схем бази даних, PqAdmin4 як утиліта для перегляду та ручного редагування даних в базі даних, ASP NET Core Web Api для реалізації RESTful API серверу, контролеру ESP32, Angular, .NET MAUI.
@@ -374,11 +374,12 @@ API-шар обробляє зовнішній інтерфейс застосу
 
 1.	Загальна інформація. URL: https://skimis.at/ski-resort-management/ (дата звернення: 15.04.2024)
 2.	Репозиторій проекту. URL: https://github.com/NureTkachenkoMykhailo/apzkr-pzpi-21-2-tkachenko-mykhailo (дата звернення: 22.08.2024)
-3.	Емулятор ІоТ девайсу. Wokwi. URL: https://wokwi.com/projects/398059490999458817 (дата звернення: 09.06.2024).
-4.	Документація ASP.NET. Microsoft learn. URL: https://learn.microsoft.com/en-us/aspnet/core/?view=aspnetcore-8.0 (дата звернення: 20.05.2024).
-5.	Документація Angular. Angular. URL: https://angular.dev/ (дата звернення: 22.07.2024).
-6.	Документація Wokwi. Wokwi Docs. URL: https://docs.wokwi.com/ (дата звернення: 22.05.2024).
-7.	Документація .NET Multi-platform App UI. Microsoft Learn. URL: https://learn.microsoft.com/en-us/dotnet/maui/?view=net-maui-8.0 (date of access: 18.08.2024).
+3.	Відео демонстрація. URL: https://youtu.be/GANz9xkKBrk.
+4.	Емулятор ІоТ девайсу. Wokwi. URL: https://wokwi.com/projects/398059490999458817 (дата звернення: 09.06.2024).
+5.	Документація ASP.NET. Microsoft learn. URL: https://learn.microsoft.com/en-us/aspnet/core/?view=aspnetcore-8.0 (дата звернення: 20.05.2024).
+6.	Документація Angular. Angular. URL: https://angular.dev/ (дата звернення: 22.07.2024).
+7.	Документація Wokwi. Wokwi Docs. URL: https://docs.wokwi.com/ (дата звернення: 22.05.2024).
+8.	Документація .NET Multi-platform App UI. Microsoft Learn. URL: https://learn.microsoft.com/en-us/dotnet/maui/?view=net-maui-8.0 (date of access: 18.08.2024).
 
 ДОДАТОК А
 Діаграми
